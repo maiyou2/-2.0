@@ -15,6 +15,7 @@ public class User {
      */
 
     private Integer id,verificationCode;
+
     private String userName,password,phone, nickName;
 
     @Override

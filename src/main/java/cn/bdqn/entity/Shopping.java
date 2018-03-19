@@ -14,6 +14,7 @@ public class Shopping {
      */
 
     private Integer shoppingId;
+
     private String shoppingIoc, shoppingType;
 
     @Override

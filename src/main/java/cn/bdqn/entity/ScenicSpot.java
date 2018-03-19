@@ -20,6 +20,7 @@ public class ScenicSpot {
      */
 
     private Integer ticket,id;
+
     private String name,dateile,recommend,phone,paones,address, critique;
 
     @Override

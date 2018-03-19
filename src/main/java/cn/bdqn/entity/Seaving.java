@@ -14,6 +14,7 @@ public class Seaving {
      */
 
     private Integer areaId,areaForid;
+
     private String areaName;
 
     @Override

@@ -23,6 +23,7 @@ public class TrainTickets {
 
 
     private Integer trainId,trainWay, trainGoto;
+
     private String trainMaleTime,trainMaleGotoTime,trainOrigin, trainGoalluarchar;
     private double trainPrice;
 

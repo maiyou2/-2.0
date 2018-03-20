@@ -11,7 +11,7 @@ import java.util.Date;
  * answerAddtime 回答时间
  */
 public class Answer {
-    private int answerId,answerScore;
+    private int answerId,answerScore,visbble;
     private String answerAuthor,answerContext;
     private Date answerAddtime;
 
@@ -20,6 +20,7 @@ public class Answer {
         return "Answer{" +
                 "answerId=" + answerId +
                 ", answerScore=" + answerScore +
+                ", visbble=" + visbble +
                 ", answerAuthor='" + answerAuthor + '\'' +
                 ", answerContext='" + answerContext + '\'' +
                 ", answerAddtime=" + answerAddtime +
@@ -40,6 +41,14 @@ public class Answer {
 
     public void setAnswerScore(int answerScore) {
         this.answerScore = answerScore;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getAnswerAuthor() {
@@ -64,8 +73,5 @@ public class Answer {
 
     public void setAnswerAddtime(Date answerAddtime) {
         this.answerAddtime = answerAddtime;
-    }
-
-    public Answer() {
     }
 }

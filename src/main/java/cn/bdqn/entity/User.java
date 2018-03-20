@@ -14,7 +14,7 @@ public class User {
      * verificationCode  验证码
      */
 
-    private Integer id,verificationCode;
+    private Integer id,verificationCode,visbble;
 
     private String userName,password,phone, nickName;
 
@@ -23,6 +23,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", verificationCode=" + verificationCode +
+                ", visbble=" + visbble +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", phone='" + phone + '\'' +
@@ -44,6 +45,14 @@ public class User {
 
     public void setVerificationCode(Integer verificationCode) {
         this.verificationCode = verificationCode;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getUserName() {

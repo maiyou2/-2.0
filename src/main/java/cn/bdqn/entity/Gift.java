@@ -8,7 +8,7 @@ package cn.bdqn.entity;
  * sid 积分表主键
  */
 public class Gift {
-    private int giftId,integral,sid;
+    private int giftId,integral,sid,visbble;
     private String gift;
 
     @Override
@@ -17,6 +17,7 @@ public class Gift {
                 "giftId=" + giftId +
                 ", integral=" + integral +
                 ", sid=" + sid +
+                ", visbble=" + visbble +
                 ", gift='" + gift + '\'' +
                 '}';
     }
@@ -45,14 +46,19 @@ public class Gift {
         this.sid = sid;
     }
 
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
+    }
+
     public String getGift() {
         return gift;
     }
 
     public void setGift(String gift) {
         this.gift = gift;
-    }
-
-    public Gift() {
     }
 }

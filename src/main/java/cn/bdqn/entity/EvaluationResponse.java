@@ -7,7 +7,7 @@ package cn.bdqn.entity;
  * userId 用户主键
  */
 public class EvaluationResponse {
-    private int appraiseReplyId ,userId;
+    private int appraiseReplyId ,userId,visbble;
     private String appraiseReply;
 
     @Override
@@ -15,6 +15,7 @@ public class EvaluationResponse {
         return "EvaluationResponse{" +
                 "appraiseReplyId=" + appraiseReplyId +
                 ", userId=" + userId +
+                ", visbble=" + visbble +
                 ", appraiseReply='" + appraiseReply + '\'' +
                 '}';
     }
@@ -35,14 +36,19 @@ public class EvaluationResponse {
         this.userId = userId;
     }
 
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
+    }
+
     public String getAppraiseReply() {
         return appraiseReply;
     }
 
     public void setAppraiseReply(String appraiseReply) {
         this.appraiseReply = appraiseReply;
-    }
-
-    public EvaluationResponse() {
     }
 }

@@ -10,7 +10,7 @@ package cn.bdqn.entity;
 
  */
 public class Passanager {
-    private int passanageId,passanageIdCard,passanagePhone,userId;
+    private int passanageId,passanageIdCard,passanagePhone,userId,visbble;
     private String passanageName;
 
     @Override
@@ -20,6 +20,7 @@ public class Passanager {
                 ", passanageIdCard=" + passanageIdCard +
                 ", passanagePhone=" + passanagePhone +
                 ", userId=" + userId +
+                ", visbble=" + visbble +
                 ", passanageName='" + passanageName + '\'' +
                 '}';
     }
@@ -54,6 +55,14 @@ public class Passanager {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getPassanageName() {

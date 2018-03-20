@@ -14,7 +14,7 @@ public class HotelRoomRatea {
      price double NOT NULL价格
      hotel_id int(11) NOT NULL酒店主键
      */
-    private int hRatesId,hotelId;
+    private int hRatesId,hotelId,visbble;
     private String hotelRoom,hotelPrint;
     private Double price;
 
@@ -23,6 +23,7 @@ public class HotelRoomRatea {
         return "HotelRoomRatea{" +
                 "hRatesId=" + hRatesId +
                 ", hotelId=" + hotelId +
+                ", visbble=" + visbble +
                 ", hotelRoom='" + hotelRoom + '\'' +
                 ", hotelPrint='" + hotelPrint + '\'' +
                 ", price=" + price +
@@ -43,6 +44,14 @@ public class HotelRoomRatea {
 
     public void setHotelId(int hotelId) {
         this.hotelId = hotelId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getHotelRoom() {

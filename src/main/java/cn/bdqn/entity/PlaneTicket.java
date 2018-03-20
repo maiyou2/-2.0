@@ -17,7 +17,7 @@ public class PlaneTicket {
      plane_goal        varchar(30)  utf8_bin   YES             (NULL)                   select,insert,update,references  下机地点
 
      */
-    private Integer planeId;
+    private Integer planeId,visbble;
     private String planeWay,planeGoto,planeGotoTime,planeOrigin,planGoal;
     private double planePrice;
 
@@ -25,6 +25,7 @@ public class PlaneTicket {
     public String toString() {
         return "PlaneTicket{" +
                 "planeId=" + planeId +
+                ", visbble=" + visbble +
                 ", planeWay='" + planeWay + '\'' +
                 ", planeGoto='" + planeGoto + '\'' +
                 ", planeGotoTime='" + planeGotoTime + '\'' +
@@ -40,6 +41,14 @@ public class PlaneTicket {
 
     public void setPlaneId(Integer planeId) {
         this.planeId = planeId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getPlaneWay() {

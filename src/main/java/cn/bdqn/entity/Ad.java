@@ -16,29 +16,16 @@ import java.util.Date;
  * adAddtime发布时间
  */
 public class Ad {
-    private int adId,adCalssid;
+    private int adId,adCalssid,visbble;
     private String adTitle,adPhoto,adContext;
     private Date adLimittime,adAddtime;
 
-    @Override
-    public String toString() {
-        return "Ad{" +
-                "adid=" + adId +
-                ", adCalssid=" + adCalssid +
-                ", adTitle='" + adTitle + '\'' +
-                ", adPhoto='" + adPhoto + '\'' +
-                ", adContext='" + adContext + '\'' +
-                ", adLimittime=" + adLimittime +
-                ", adAddtime=" + adAddtime +
-                '}';
-    }
-
-    public int getAdid() {
+    public int getAdId() {
         return adId;
     }
 
-    public void setAdid(int adid) {
-        this.adId = adid;
+    public void setAdId(int adId) {
+        this.adId = adId;
     }
 
     public int getAdCalssid() {
@@ -47,6 +34,14 @@ public class Ad {
 
     public void setAdCalssid(int adCalssid) {
         this.adCalssid = adCalssid;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getAdTitle() {
@@ -89,6 +84,17 @@ public class Ad {
         this.adAddtime = adAddtime;
     }
 
-    public Ad() {
+    @Override
+    public String toString() {
+        return "Ad{" +
+                "adId=" + adId +
+                ", adCalssid=" + adCalssid +
+                ", visbble=" + visbble +
+                ", adTitle='" + adTitle + '\'' +
+                ", adPhoto='" + adPhoto + '\'' +
+                ", adContext='" + adContext + '\'' +
+                ", adLimittime=" + adLimittime +
+                ", adAddtime=" + adAddtime +
+                '}';
     }
 }

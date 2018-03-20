@@ -13,7 +13,7 @@ public class Seaving {
      * areaForid 编号
      */
 
-    private Integer areaId,areaForid;
+    private Integer areaId,areaForid,visbble;
 
     private String areaName;
 
@@ -22,6 +22,7 @@ public class Seaving {
         return "Seaving{" +
                 "areaId=" + areaId +
                 ", areaForid=" + areaForid +
+                ", visbble=" + visbble +
                 ", areaName='" + areaName + '\'' +
                 '}';
     }
@@ -40,6 +41,14 @@ public class Seaving {
 
     public void setAreaForid(Integer areaForid) {
         this.areaForid = areaForid;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getAreaName() {

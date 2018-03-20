@@ -14,7 +14,7 @@ import java.util.Date;
 
  */
 public class Package {
-    private Integer comboId;
+    private Integer comboId,visbble;
     private String combo,comboHotel;
     private Date comboTime,comboSetTime;
     private double comboAir,comboPrice;
@@ -23,6 +23,7 @@ public class Package {
     public String toString() {
         return "Package{" +
                 "comboId=" + comboId +
+                ", visbble=" + visbble +
                 ", combo='" + combo + '\'' +
                 ", comboHotel='" + comboHotel + '\'' +
                 ", comboTime=" + comboTime +
@@ -38,6 +39,14 @@ public class Package {
 
     public void setComboId(Integer comboId) {
         this.comboId = comboId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getCombo() {

@@ -14,7 +14,7 @@ package cn.bdqn.entity;
 
  */
 public class Personage {
-    private Integer id,age,idCard,theIntegral,userId;
+    private Integer id,age,idCard,theIntegral,userId,visbble;
     private String name,sex,nation;
 
     @Override
@@ -25,6 +25,7 @@ public class Personage {
                 ", idCard=" + idCard +
                 ", theIntegral=" + theIntegral +
                 ", userId=" + userId +
+                ", visbble=" + visbble +
                 ", name='" + name + '\'' +
                 ", sex='" + sex + '\'' +
                 ", nation='" + nation + '\'' +
@@ -69,6 +70,14 @@ public class Personage {
 
     public void setUserId(Integer userId) {
         this.userId = userId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getName() {

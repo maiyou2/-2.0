@@ -10,7 +10,7 @@ package cn.bdqn.entity;
 
  */
 public class News {
-    private Integer newsId;
+    private Integer newsId,visbble;
     private String newsTitle;
     private String  newsMark;
     private String newsPhoto;
@@ -20,6 +20,7 @@ public class News {
     public String toString() {
         return "News{" +
                 "newsId=" + newsId +
+                ", visbble=" + visbble +
                 ", newsTitle='" + newsTitle + '\'' +
                 ", newsMark='" + newsMark + '\'' +
                 ", newsPhoto='" + newsPhoto + '\'' +
@@ -33,6 +34,14 @@ public class News {
 
     public void setNewsId(Integer newsId) {
         this.newsId = newsId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getNewsTitle() {

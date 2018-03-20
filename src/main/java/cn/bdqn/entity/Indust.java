@@ -13,13 +13,14 @@ public class Indust {
      indust_config varchar(30) NOT NULL审核状态
      indust_list varchar(30) NULL排序
      */
-    private int industId;
+    private int industId,visbble;
     private String industName,industConfig,industList;
 
     @Override
     public String toString() {
         return "Indust{" +
                 "industId=" + industId +
+                ", visbble=" + visbble +
                 ", industName='" + industName + '\'' +
                 ", industConfig='" + industConfig + '\'' +
                 ", industList='" + industList + '\'' +
@@ -32,6 +33,14 @@ public class Indust {
 
     public void setIndustId(int industId) {
         this.industId = industId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getIndustName() {

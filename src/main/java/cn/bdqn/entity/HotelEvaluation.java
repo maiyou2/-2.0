@@ -15,7 +15,7 @@ public class HotelEvaluation {
      hotel_id int(11) NULL酒店主键
      user_id int(11) NULL用户主键
      */
-    private int roomId,hotelId,userId;
+    private int roomId,hotelId,userId,visbble;
     private String roomText,roomPrint,roomTime;
 
     @Override
@@ -24,6 +24,7 @@ public class HotelEvaluation {
                 "roomId=" + roomId +
                 ", hotelId=" + hotelId +
                 ", userId=" + userId +
+                ", visbble=" + visbble +
                 ", roomText='" + roomText + '\'' +
                 ", roomPrint='" + roomPrint + '\'' +
                 ", roomTime='" + roomTime + '\'' +
@@ -52,6 +53,14 @@ public class HotelEvaluation {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getRoomText() {

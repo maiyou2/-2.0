@@ -14,7 +14,7 @@ public class Guide {
      W_congig varchar(30) NOT NULL审核
      W_time datetime NOT NULL升级
      */
-    private int wId;
+    private int wId,visbble;
     private String wSbe;
     private int wList;
     private String wCongig;
@@ -24,6 +24,7 @@ public class Guide {
     public String toString() {
         return "Guide{" +
                 "wId=" + wId +
+                ", visbble=" + visbble +
                 ", wSbe='" + wSbe + '\'' +
                 ", wList=" + wList +
                 ", wCongig='" + wCongig + '\'' +
@@ -37,6 +38,14 @@ public class Guide {
 
     public void setwId(int wId) {
         this.wId = wId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getwSbe() {

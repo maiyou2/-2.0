@@ -13,7 +13,7 @@ public class Shopping {
      * shoppingType商城类型
      */
 
-    private Integer shoppingId;
+    private Integer shoppingId,visbble;
 
     private String shoppingIoc, shoppingType;
 
@@ -21,6 +21,7 @@ public class Shopping {
     public String toString() {
         return "Shopping{" +
                 "shoppingId=" + shoppingId +
+                ", visbble=" + visbble +
                 ", shoppingIoc='" + shoppingIoc + '\'' +
                 ", shoppingType='" + shoppingType + '\'' +
                 '}';
@@ -32,6 +33,14 @@ public class Shopping {
 
     public void setShoppingId(Integer shoppingId) {
         this.shoppingId = shoppingId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getShoppingIoc() {

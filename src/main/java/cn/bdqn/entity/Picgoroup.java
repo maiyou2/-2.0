@@ -10,13 +10,14 @@ package cn.bdqn.entity;
 
  */
 public class Picgoroup {
-    private Integer picgoroupId;
+    private Integer picgoroupId,visbble;
     private String picgoroupAuthor,picgoroupContext,picgoroupList,picgoroupRole;
 
     @Override
     public String toString() {
         return "Picgoroup{" +
                 "picgoroupId=" + picgoroupId +
+                ", visbble=" + visbble +
                 ", picgoroupAuthor='" + picgoroupAuthor + '\'' +
                 ", picgoroupContext='" + picgoroupContext + '\'' +
                 ", picgoroupList='" + picgoroupList + '\'' +
@@ -30,6 +31,14 @@ public class Picgoroup {
 
     public void setPicgoroupId(Integer picgoroupId) {
         this.picgoroupId = picgoroupId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getPicgoroupAuthor() {

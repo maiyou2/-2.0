@@ -13,7 +13,7 @@ package cn.bdqn.entity;
 
  */
 public class OrderForm {
-    private Integer id,tripId,aircraftId,trainId,shoppingId,userId,comboId,hotelId;
+    private Integer id,tripId,aircraftId,trainId,shoppingId,userId,comboId,hotelId,visbble;
 
     @Override
     public String toString() {
@@ -26,6 +26,7 @@ public class OrderForm {
                 ", userId=" + userId +
                 ", comboId=" + comboId +
                 ", hotelId=" + hotelId +
+                ", visbble=" + visbble +
                 '}';
     }
 
@@ -91,5 +92,13 @@ public class OrderForm {
 
     public void setHotelId(Integer hotelId) {
         this.hotelId = hotelId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 }

@@ -19,7 +19,7 @@ public class ScenicSpot {
      * critique 景点点评
      */
 
-    private Integer ticket,id;
+    private Integer ticket,id,visbble;
 
     private String name,dateile,recommend,phone,paones,address, critique;
 
@@ -28,6 +28,7 @@ public class ScenicSpot {
         return "ScenicSpot{" +
                 "ticket=" + ticket +
                 ", id=" + id +
+                ", visbble=" + visbble +
                 ", name='" + name + '\'' +
                 ", dateile='" + dateile + '\'' +
                 ", recommend='" + recommend + '\'' +
@@ -52,6 +53,14 @@ public class ScenicSpot {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getName() {

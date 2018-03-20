@@ -12,7 +12,7 @@ import java.util.Date;
  * adminTime上次登陆时间
  */
 public class Admin {
-    private int adminId ;
+    private int adminId,visbble ;
     private String adminName,password,adminRank,adminRote;
     private Date adminTime;
 
@@ -20,6 +20,7 @@ public class Admin {
     public String toString() {
         return "Admin{" +
                 "adminId=" + adminId +
+                ", visbble=" + visbble +
                 ", adminName='" + adminName + '\'' +
                 ", password='" + password + '\'' +
                 ", adminRank='" + adminRank + '\'' +
@@ -34,6 +35,14 @@ public class Admin {
 
     public void setAdminId(int adminId) {
         this.adminId = adminId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getAdminName() {
@@ -74,8 +83,5 @@ public class Admin {
 
     public void setAdminTime(Date adminTime) {
         this.adminTime = adminTime;
-    }
-
-    public Admin() {
     }
 }

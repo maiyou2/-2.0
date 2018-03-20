@@ -9,7 +9,7 @@ package cn.bdqn.entity;
 
  */
 public class Log {
-    private Integer logId;
+    private Integer logId,visbble;
     private String logName;
     private String logType;
     private String logPhone;
@@ -18,6 +18,7 @@ public class Log {
     public String toString() {
         return "Log{" +
                 "logId=" + logId +
+                ", visbble=" + visbble +
                 ", logName='" + logName + '\'' +
                 ", logType='" + logType + '\'' +
                 ", logPhone='" + logPhone + '\'' +
@@ -30,6 +31,14 @@ public class Log {
 
     public void setLogId(Integer logId) {
         this.logId = logId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getLogName() {

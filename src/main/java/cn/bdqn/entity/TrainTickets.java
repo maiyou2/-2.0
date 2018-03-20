@@ -22,7 +22,7 @@ public class TrainTickets {
 
 
 
-    private Integer trainId,trainWay, trainGoto;
+    private Integer trainId,trainWay, trainGoto,visbble;
 
     private String trainMaleTime,trainMaleGotoTime,trainOrigin, trainGoalluarchar;
     private double trainPrice;
@@ -33,6 +33,7 @@ public class TrainTickets {
                 "trainId=" + trainId +
                 ", trainWay=" + trainWay +
                 ", trainGoto=" + trainGoto +
+                ", visbble=" + visbble +
                 ", trainMaleTime='" + trainMaleTime + '\'' +
                 ", trainMaleGotoTime='" + trainMaleGotoTime + '\'' +
                 ", trainOrigin='" + trainOrigin + '\'' +
@@ -63,6 +64,14 @@ public class TrainTickets {
 
     public void setTrainGoto(Integer trainGoto) {
         this.trainGoto = trainGoto;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public String getTrainMaleTime() {

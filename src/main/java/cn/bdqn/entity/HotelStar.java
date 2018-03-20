@@ -11,13 +11,14 @@ public class HotelStar {
      hotel_staid int(11) NOT NULL
      hotel_star varchar(10) NOT NULL酒店星级
      */
-    private int hotelStaId;
+    private int hotelStaId,visbble;
     private String hotelStar;
 
     @Override
     public String toString() {
         return "HotelStar{" +
                 "hotelStaId=" + hotelStaId +
+                ", visbble=" + visbble +
                 ", hotelStar='" + hotelStar + '\'' +
                 '}';
     }
@@ -28,6 +29,14 @@ public class HotelStar {
 
     public void setHotelStaId(int hotelStaId) {
         this.hotelStaId = hotelStaId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getHotelStar() {

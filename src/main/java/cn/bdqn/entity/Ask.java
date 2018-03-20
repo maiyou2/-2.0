@@ -8,13 +8,14 @@ package cn.bdqn.entity;
  * askDorid 上一级编号
  */
 public class Ask {
-    private int askId;
+    private int askId,visbble;
     private String askAuther,askList,askDorid;
 
     @Override
     public String toString() {
         return "Ask{" +
                 "askId=" + askId +
+                ", visbble=" + visbble +
                 ", askAuther='" + askAuther + '\'' +
                 ", askList='" + askList + '\'' +
                 ", askDorid='" + askDorid + '\'' +
@@ -27,6 +28,14 @@ public class Ask {
 
     public void setAskId(int askId) {
         this.askId = askId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getAskAuther() {
@@ -51,8 +60,5 @@ public class Ask {
 
     public void setAskDorid(String askDorid) {
         this.askDorid = askDorid;
-    }
-
-    public Ask() {
     }
 }

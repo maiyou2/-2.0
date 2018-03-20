@@ -10,7 +10,7 @@ public class Intergral {
      userid int(11) 用户表主键
      *
      */
-    private Integer integeralId;
+    private Integer integeralId,visbble;
     private Integer integral;
     private Integer userid;
 
@@ -18,6 +18,7 @@ public class Intergral {
     public String toString() {
         return "Intergral{" +
                 "integeralId=" + integeralId +
+                ", visbble=" + visbble +
                 ", integral=" + integral +
                 ", userid=" + userid +
                 '}';
@@ -29,6 +30,14 @@ public class Intergral {
 
     public void setIntegeralId(Integer integeralId) {
         this.integeralId = integeralId;
+    }
+
+    public Integer getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(Integer visbble) {
+        this.visbble = visbble;
     }
 
     public Integer getIntegral() {

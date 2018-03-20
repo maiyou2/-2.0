@@ -11,7 +11,7 @@ import javax.xml.soap.Text;
  * foodPhoto 美食图片
  */
 public class Food {
-    private int foodId;
+    private int foodId,visbble;
     private  String foodName ,foodType;
     private  double foodSale;
     private Text foodPhoto;
@@ -20,6 +20,7 @@ public class Food {
     public String toString() {
         return "Food{" +
                 "foodId=" + foodId +
+                ", visbble=" + visbble +
                 ", foodName='" + foodName + '\'' +
                 ", foodType='" + foodType + '\'' +
                 ", foodSale=" + foodSale +
@@ -33,6 +34,14 @@ public class Food {
 
     public void setFoodId(int foodId) {
         this.foodId = foodId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getFoodName() {
@@ -65,8 +74,5 @@ public class Food {
 
     public void setFoodPhoto(Text foodPhoto) {
         this.foodPhoto = foodPhoto;
-    }
-
-    public Food() {
     }
 }

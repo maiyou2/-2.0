@@ -14,7 +14,7 @@ public class Hotel {
      hotel_address varchar(100) NOT NULL酒店地址
      hotel_starid int(11) NULL酒店星级表主键
      */
-    private int hotelId,hotelStarId;
+    private int hotelId,hotelStarId,visbble;
     private String hotelName,hotelDatail,hotelPhone,hotelAddress;
 
     @Override
@@ -22,6 +22,7 @@ public class Hotel {
         return "Hotel{" +
                 "hotelId=" + hotelId +
                 ", hotelStarId=" + hotelStarId +
+                ", visbble=" + visbble +
                 ", hotelName='" + hotelName + '\'' +
                 ", hotelDatail='" + hotelDatail + '\'' +
                 ", hotelPhone='" + hotelPhone + '\'' +
@@ -43,6 +44,14 @@ public class Hotel {
 
     public void setHotelStarId(int hotelStarId) {
         this.hotelStarId = hotelStarId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getHotelName() {

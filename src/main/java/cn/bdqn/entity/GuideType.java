@@ -11,7 +11,7 @@ public class GuideType {
      Wiz_list int(30) NOT NULL排序
      Wiz_role varchar(30) NULL角色
      */
-    private int wizId,wizList;
+    private int wizId,wizList,visbble;
     private String wizSbuTxt,wizRoal;
 
     @Override
@@ -19,6 +19,7 @@ public class GuideType {
         return "GuideType{" +
                 "wizId=" + wizId +
                 ", wizList=" + wizList +
+                ", visbble=" + visbble +
                 ", wizSbuTxt='" + wizSbuTxt + '\'' +
                 ", wizRoal='" + wizRoal + '\'' +
                 '}';
@@ -38,6 +39,14 @@ public class GuideType {
 
     public void setWizList(int wizList) {
         this.wizList = wizList;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getWizSbuTxt() {

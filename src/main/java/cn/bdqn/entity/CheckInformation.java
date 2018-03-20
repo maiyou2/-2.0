@@ -13,7 +13,7 @@ import java.util.Date;
  * hotel_id 酒店主键
  */
 public class CheckInformation {
-    private  int checkId,hotelId;
+    private  int checkId,hotelId,visbble;
     private String checkPeopleNum,checkName,checkPhone;
     private Date check_intime,check_ontime;
 
@@ -22,6 +22,7 @@ public class CheckInformation {
         return "CheckInformation{" +
                 "checkId=" + checkId +
                 ", hotelId=" + hotelId +
+                ", visbble=" + visbble +
                 ", checkPeopleNum='" + checkPeopleNum + '\'' +
                 ", checkName='" + checkName + '\'' +
                 ", checkPhone='" + checkPhone + '\'' +
@@ -44,6 +45,14 @@ public class CheckInformation {
 
     public void setHotelId(int hotelId) {
         this.hotelId = hotelId;
+    }
+
+    public int getVisbble() {
+        return visbble;
+    }
+
+    public void setVisbble(int visbble) {
+        this.visbble = visbble;
     }
 
     public String getCheckPeopleNum() {
@@ -84,8 +93,5 @@ public class CheckInformation {
 
     public void setCheck_ontime(Date check_ontime) {
         this.check_ontime = check_ontime;
-    }
-
-    public CheckInformation() {
     }
 }
